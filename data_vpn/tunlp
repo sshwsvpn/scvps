@@ -1,12 +1,12 @@
-GITHUB_CMD="https://github.com/arismaramar/gif/raw/main/fodder/FighterTunnel-examples/Documentation/"
-wget -q -O /etc/systemd/system/limitvmess.service "${GITHUB_CMD}1" && chmod +x limitvmess.service >/dev/null 2>&1
-wget -q -O /etc/systemd/system/limitvless.service "${GITHUB_CMD}2" && chmod +x limitvless.service >/dev/null 2>&1
-wget -q -O /etc/systemd/system/limittrojan.service "${GITHUB_CMD}3" && chmod +x limittrojan.service >/dev/null 2>&1
-wget -q -O /etc/systemd/system/limitshadowsocks.service "${GITHUB_CMD}4" && chmod +x limitshadowsocks.service >/dev/null 2>&1
-wget -q -O /etc/xray/limit.vmess "${GITHUB_CMD}vmess" >/dev/null 2>&1
-wget -q -O /etc/xray/limit.vless "${GITHUB_CMD}vless" >/dev/null 2>&1
-wget -q -O /etc/xray/limit.trojan "${GITHUB_CMD}trojan" >/dev/null 2>&1
-wget -q -O /etc/xray/limit.shadowsocks "${GITHUB_CMD}shadowsocks" >/dev/null 2>&1
+HOST="https://raw.githubusercontent.com/sshwsvpn/scvps/main/limit"
+wget -q -O /etc/systemd/system/limitvmess.service "${HOST}/1" && chmod +x limitvmess.service >/dev/null 2>&1
+wget -q -O /etc/systemd/system/limitvless.service "${HOST}/2" && chmod +x limitvless.service >/dev/null 2>&1
+wget -q -O /etc/systemd/system/limittrojan.service "${HOST}/3" && chmod +x limittrojan.service >/dev/null 2>&1
+wget -q -O /etc/systemd/system/limitshadowsocks.service "${HOST}/4" && chmod +x limitshadowsocks.service >/dev/null 2>&1
+wget -q -O /etc/xray/limit.vmess "${HOST}/vmess" >/dev/null 2>&1
+wget -q -O /etc/xray/limit.vless "${HOST}/vless" >/dev/null 2>&1
+wget -q -O /etc/xray/limit.trojan "${HOST}/trojan" >/dev/null 2>&1
+wget -q -O /etc/xray/limit.shadowsocks "${HOST}/shadowsocks" >/dev/null 2>&1
 chmod +x /etc/xray/limit.vmess
 chmod +x /etc/xray/limit.vless
 chmod +x /etc/xray/limit.trojan
