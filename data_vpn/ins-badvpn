@@ -1,16 +1,16 @@
 #!/bin/bash
-HOST="https://raw.githubusercontent.com/sshwsvpn/scvps/main/badvpn"
-wget -O /usr/bin/badvpn "${HOST}/newudpgw" >/dev/null 2>&1
+HOSTBADVPN="https://raw.githubusercontent.com/sshwsvpn/scvps/main/badvpn"
+wget -O /usr/bin/badvpn "${HOSTBADVPN}/newudpgw" >/dev/null 2>&1
 chmod +x /usr/bin/badvpn > /dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn1.service "${HOST}/badvpn1.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn2.service "${HOST}/badvpn2.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn3.service "${HOST}/badvpn3.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn4.service "${HOST}/badvpn4.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn5.service "${HOST}/badvpn5.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn6.service "${HOST}/badvpn6.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn7.service "${HOST}/badvpn7.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn8.service "${HOST}/badvpn8.service" >/dev/null 2>&1
-wget -q -O /etc/systemd/system/badvpn9.service "${HOST}/badvpn9.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn1.service "${HOSTBADVPN}/badvpn1.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn2.service "${HOSTBADVPN}/badvpn2.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn3.service "${HOSTBADVPN}/badvpn3.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn4.service "${HOSTBADVPN}/badvpn4.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn5.service "${HOSTBADVPN}/badvpn5.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn6.service "${HOSTBADVPN}/badvpn6.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn7.service "${HOSTBADVPN}/badvpn7.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn8.service "${HOSTBADVPN}/badvpn8.service" >/dev/null 2>&1
+wget -q -O /etc/systemd/system/badvpn9.service "${HOSTBADVPN}/badvpn9.service" >/dev/null 2>&1
 systemctl disable badvpn1 
 systemctl stop badvpn1 
 systemctl enable badvpn1
